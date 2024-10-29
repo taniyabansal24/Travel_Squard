@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: Single column */
+  gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* 2 columns for wider screens */
+  }
+}
+.swiper-slide {
+  height: 410px;
+}

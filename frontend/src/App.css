@@ -1,0 +1,45 @@
+.slide {
+  /* Your base styles for slides */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hide slides */
+  transition: opacity 0.5s ease; /* Transition effect for opacity */
+  /* background-repeat: no-repeat; */
+}
+
+.active {
+  opacity: 1; /* Make active slide fully visible */
+}
+
+.mobile-menu {
+  background-color: #000;
+  z-index: 999999999999999999;
+}
+
+html, body {
+
+  overflow: auto;
+}
+.container{
+  margin-inline: auto;
+}
+/* For small devices (640px and below) */
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+/* For medium devices (640px and above) */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .container {
+    max-width: 640px !important;
+  }
+}
+.container{
+  background: none !important;
+  box-shadow: none !important;
+}
